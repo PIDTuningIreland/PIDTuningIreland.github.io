@@ -130,7 +130,7 @@ img {
   padding-bottom: 1.25em;
 }
 
-.social__item + .social__item {
+.social__item+.social__item {
   margin-left: 1em;
 }
 
@@ -211,6 +211,7 @@ img {
   -webkit-scroll-margin-top: 10rem;
   scroll-margin-top: 6rem;
 }
+
 /****************** 
   main
 *******************/
@@ -224,11 +225,9 @@ img {
 }
 
 .background {
-  background: linear-gradient(
-      45deg,
+  background: linear-gradient(45deg,
       rgba(21, 43, 85, 0.65),
-      rgba(78, 100, 142, 0.65)
-    ),
+      rgba(78, 100, 142, 0.65)),
     url(../images/graph.jpg) no-repeat center;
   background-size: cover;
 }
@@ -270,7 +269,7 @@ img {
   transition: filter 0.2s ease-in;
 }
 
-.card + .card {
+.card+.card {
   margin-top: 3.75em;
 }
 
@@ -355,11 +354,9 @@ img {
 
 .image {
   position: relative;
-  background: linear-gradient(
-    45deg,
-    rgba(21, 43, 85, 0.65),
-    rgba(78, 100, 142, 0.65)
-  );
+  background: linear-gradient(45deg,
+      rgba(21, 43, 85, 0.65),
+      rgba(78, 100, 142, 0.65));
 }
 
 .image img {
@@ -449,6 +446,7 @@ img {
   margin-right: 1em;
   color: var(--clr-blue);
 }
+
 ul ul {
   font-family: "Font Awesome 5 Free";
   font-weight: 100;
@@ -467,7 +465,7 @@ ul ul {
   contact us
 *******************/
 .form {
-  margin-top: 6em;
+  margin-top: 1em;
 }
 
 .form__image a {
@@ -478,7 +476,6 @@ ul ul {
   margin-bottom: 3em;
 }
 
-.telephone,
 .location,
 .linkedin {
   text-align: center;
@@ -486,7 +483,6 @@ ul ul {
   display: grid;
 }
 
-.telephone__text,
 .linkedin_text,
 .location__text {
   display: block;
@@ -494,7 +490,6 @@ ul ul {
   margin-top: 1em;
 }
 
-.telephone i,
 .linkedin i,
 .location i {
   font-size: 2rem;
@@ -536,7 +531,7 @@ textarea::placeholder {
   font-family: var(--ff-primary);
 }
 
-.form__item + .form__item,
+.form__item+.form__item,
 textarea {
   margin-top: 2em;
 }
@@ -613,7 +608,7 @@ textarea {
   color: var(--clr-l-blue-1);
 }
 
-.link__item + .link__item {
+.link__item+.link__item {
   margin-left: 1em;
 }
 
@@ -678,7 +673,7 @@ textarea {
     grid-gap: 60px;
   }
 
-  .card + .card {
+  .card+.card {
     margin-top: 0;
   }
 
@@ -725,6 +720,7 @@ textarea {
     row-gap: 20px;
     grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
+    padding: 1.2em;
   }
 
   .form__image a {
@@ -732,7 +728,6 @@ textarea {
     margin-bottom: 0;
   }
 
-  .telephone,
   .linkedin,
   .location {
     width: 80%;
@@ -744,7 +739,6 @@ textarea {
     text-align: left;
   }
 
-  .telephone__text,
   .linkedin_text,
   .location__text {
     font-size: 1.25rem;
@@ -755,14 +749,12 @@ textarea {
     margin-top: 0;
   }
 
-  .telephone i,
   .linkedin i,
   .location i {
     font-size: 5rem;
     text-align: center;
   }
 
-  .telephone:hover i,
   .linkedin:hover i,
   .location:hover i {
     font-size: 5.2em;
@@ -783,7 +775,7 @@ textarea {
     justify-content: space-between;
   }
 
-  .link__item + .link__item {
+  .link__item+.link__item {
     margin-left: 0;
   }
 
