@@ -294,14 +294,14 @@
           </div>
           <form id="contact" class="flex col" action="https://formspree.io/f/myyabjbb" method="POST">
             <div class="form__item">
-              <input type="text" placeholder="Your name" id="name" />
+              <input name="name" type="text" placeholder="Your name" id="name" />
               <span class="danger">Name cannot be empty.</span>
             </div>
             <div class="form__item">
-              <input type="email" placeholder="Email Address" id="email" />
+              <input name="email" type="email" placeholder="Email Address" id="email" />
               <span class="danger">Email cannot be empty.</span>
             </div>
-            <textarea placeholder="Message" id="message"></textarea>
+            <textarea name="message" placeholder="Message" id="message"></textarea>
             <input type="submit" id="submit" value="Submit" class="btn m--top center" />
             <div class="overlay">
               <div class="successful">
