@@ -292,16 +292,16 @@
               </div>
             </a>
           </div>
-          <form id="contact" class="flex col" action="https://formspree.io/f/myyabjbb" method="POST">
+          <form action="https://formspree.io/f/myyabjbb" method="post" id="contact" class="flex col">
             <div class="form__item">
               <input name="name" type="text" placeholder="Your name" id="name" />
               <span class="danger">Name cannot be empty.</span>
             </div>
             <div class="form__item">
-              <input name="email" type="email" placeholder="Email Address" id="email" />
+              <input name="_replyto" type="email" placeholder="Email Address" id="email" />
               <span class="danger">Email cannot be empty.</span>
             </div>
-            <textarea name="message" placeholder="Message" id="message"></textarea>
+            <textarea name="message" rows="6" placeholder="Message" id="message"></textarea>
             <input type="submit" id="submit" value="Submit" class="btn m--top center" />
             <div class="overlay">
               <div class="successful">
@@ -312,6 +312,7 @@
                 </p>
               </div>
             </div>
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
           </form>
         </div>
       </div>
