@@ -189,12 +189,12 @@ img {
 .nav__bottom {
   max-height: 0;
   overflow: hidden;
-  transition: var(--transition);
+  /*transition: var(--transition);*/
 }
 
 .nav__bottom--toggle {
   max-height: 100rem;
-  transition: var(--transition);
+  /*transition: var(--transition);*/
 }
 
 .active {
