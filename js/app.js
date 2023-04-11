@@ -28,10 +28,13 @@ function toggleNav() {
 function activeLink() {
   navLink.forEach(function (link) {
     link.addEventListener("click", function (e) {
+      e.preventDefault()
       navLink.forEach(function (l) {
         l.classList.remove("active");
       });
       e.target.classList.add("active");
+      window.location.href = e.target.href;
+      nav.classList.toggle("nav__bottom--toggle");
     });
   });
 }
