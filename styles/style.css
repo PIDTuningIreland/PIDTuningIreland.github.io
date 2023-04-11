@@ -504,7 +504,7 @@ ul ul {
 }
 
 #contact {
-  padding: 1.2em;
+  padding: 2em;
 }
 
 .danger {
@@ -727,7 +727,7 @@ textarea {
     row-gap: 20px;
     grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
-    padding: 1.2em;
+    padding: 2em;
   }
 
   .form__image a {
