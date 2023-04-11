@@ -6,7 +6,6 @@ const navLink = document.querySelectorAll(".nav__link");
 const form = document.getElementById("contact");
 const clientName = document.getElementById("name");
 const email = document.getElementById("email");
-const number = document.getElementById("number");
 const msg = document.getElementById("message");
 const overlay = document.querySelector(".overlay");
 const crossForm = document.querySelector(".cross-form");
@@ -39,7 +38,7 @@ function activeLink() {
 
 // card
 function cardOverlay() {
-  btnCard.forEach(function (btn,i) {
+  btnCard.forEach(function (btn, i) {
     btn.addEventListener("click", function (e) {
       e.preventDefault();
       overlayImg[i].style.display = "flex";
@@ -50,10 +49,10 @@ function cardOverlay() {
 
 // img
 function imgOverlay() {
-  btnImg.forEach(function (btn,i) {
+  btnImg.forEach(function (btn, i) {
     btn.addEventListener("click", function (e) {
       e.preventDefault();
-      overlayImg[i+3].style.display = "flex";
+      overlayImg[i + 3].style.display = "flex";
       disableScroll();
     });
   });
@@ -70,9 +69,7 @@ function formSubmit() {
     if (!email.value) {
       email.nextElementSibling.style.display = "inline-block";
     }
-    if (!number.value) {
-      number.nextElementSibling.style.display = "inline-block";
-    } else {
+    else {
       overlay.style.display = "flex";
       disableScroll();
     }
@@ -80,7 +77,6 @@ function formSubmit() {
     setTimeout(function () {
       clientName.nextElementSibling.style.display = "none";
       email.nextElementSibling.style.display = "none";
-      number.nextElementSibling.style.display = "none";
     }, 3000);
   });
 }
@@ -90,14 +86,13 @@ function disableOverlayForm() {
     overlay.style.display = "none";
     clientName.value = "";
     email.value = "";
-    number.value = "";
     msg.value = "";
     enableScroll();
   });
 }
 
 function disableOverlayImg() {
-  crossImg.forEach(function (x,i) {
+  crossImg.forEach(function (x, i) {
     x.addEventListener("click", function (e) {
       overlayImg[i].style.display = "none";
       enableScroll();
