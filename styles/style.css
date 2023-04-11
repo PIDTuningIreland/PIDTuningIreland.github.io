@@ -179,7 +179,7 @@ img {
   background-color: var(--clr-brown);
   color: var(--clr-light);
   transition: all 0.5s ease;
-  /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .icon {
@@ -189,12 +189,10 @@ img {
 .nav__bottom {
   max-height: 0;
   overflow: hidden;
-  /*transition: var(--transition);*/
 }
 
 .nav__bottom--toggle {
   max-height: 100rem;
-  /*transition: var(--transition);*/
 }
 
 .active {
