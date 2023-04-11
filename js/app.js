@@ -75,11 +75,13 @@ function formSubmit() {
       disableScroll();
     }
 
-    fetch(e.target.action, {
-      method: form.method,
-      body: data,
-      headers: { 'Accept': 'application/json' }
-    });
+    if (clientName.value && email.value) {
+      fetch(e.target.action, {
+        method: form.method,
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+    }
 
     setTimeout(function () {
       clientName.nextElementSibling.style.display = "none";
