@@ -62,6 +62,7 @@ function imgOverlay() {
 function formSubmit() {
   form.addEventListener("submit", function (e) {
     e.preventDefault();
+    var data = new FormData(e.target);
 
     if (!clientName.value) {
       clientName.nextElementSibling.style.display = "inline-block";
@@ -73,6 +74,12 @@ function formSubmit() {
       overlay.style.display = "flex";
       disableScroll();
     }
+
+    fetch(e.target.action, {
+      method: form.method,
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
 
     setTimeout(function () {
       clientName.nextElementSibling.style.display = "none";
