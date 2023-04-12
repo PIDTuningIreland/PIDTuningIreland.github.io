@@ -22,7 +22,7 @@
       <div class="container row row--spacing">
         <div class="nav__top">
           <div class="logo">
-            <a href="#home">
+            <a href="">
               <img src="./images/logo.png" alt="logo" />
             </a>
             <h5>PID Tuning Ireland</h5>
@@ -35,6 +35,9 @@
           <ul class="nav__list row row--spacing">
             <li class="nav__item">
               <a href="#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#indust" class="nav__link">Industries</a>
             </li>
             <li class="nav__item">
               <a href="#method" class="nav__link">Method</a>
@@ -93,112 +96,165 @@
       </div>
     </section>
 
-    <section class="section" id="method">
+    <section class="section" id="indust">
       <div class="container">
-        <div class="card__container card--grid">
-          <div class="card card-content-grid">
-            <div class="card__title">
-              <h3>Evaluate</h3>
+        <div class="section__heading">
+          <h2>Industries</h2>
+          <div class="underline"></div>
+          <div class="indust-image-gallery">
+            <div class="indust-image">
+              <img src="./images/aBio.png" alt="Biotechnology" />
+              <div class="indust-image__content">
+                <h4>Biotechnology</h4>
+              </div>
             </div>
-            <div class="card__icon">
-              <img src="./images/icon/magnifying-glass-solid.svg" alt="compass" />
-            </div>
-            <div class="card__content">
-              <br>
-              Identify System Model<br>
-              (FOPDT or SOPDT)<br>
-              <br>
-            </div>
-            <div class="btn btn--card">
-              <a href="#">Learn More</a>
-            </div>
-          </div>
-          <div class="card card-content-grid">
-            <div class="card__title">
-              <h3>Tune</h3>
-            </div>
-            <div class="card__icon">
-              <img src="./images/icon/drafting-compass-solid.svg" alt="compass" />
-            </div>
-            <div class="card__content">
-              <br>
-              Optimise Tuning<br>
-              Values<br>
-              <br>
-            </div>
-            <div class="btn btn--card">
-              <a href="#">Learn More</a>
-            </div>
-          </div>
-          <div class="card card-content-grid">
-            <div class="card__title">
-              <h3>Implement</h3>
-            </div>
-            <div class="card__icon">
-              <img src="./images/icon/gears-solid.svg" alt="compass" />
-            </div>
-            <div class="card__content">
-              <br>
-              Apply Tune
-              <br>
-            </div>
-            <div class="btn btn--card">
-              <a href="#">Learn More</a>
-            </div>
-          </div>
+            <div class="indust-image">
+              <img src="./images/bPharma.png" alt="Pharmaceutical" />
+              <div class="indust-image__content">
+                <h4>Pharmaceutical</h4>
+              </div>
 
-          <div class="overlay--img">
-            <i class="fas fa-times cross-img"></i>
-            <div class="img-info">
-              <img src="./images/1_ident.jpg" alt="house" />
-              <div class="img__content">
-                <p>
-                  <b>Fit a model to the Actual Data.</b>
-                <ul class="img__list">
-                  <li class="list__item">Process Variable and Control Variable are required</li>
-                  <li class="list__item">Regression is used to find an accurate system model</li>
-                  <li class="list__item">To achieve predictable tuning outcomes, a precise model is necessary</li>
-                </ul>
-                </p>
+            </div>
+            <div class="indust-image">
+              <img src="./images/cSemi.png" alt="Semiconductor" />
+              <div class="indust-image__content">
+                <h4>Semiconductor</h4>
               </div>
             </div>
-          </div>
-          <div class="overlay--img">
-            <i class="fas fa-times cross-img"></i>
-            <div class="img-info">
-              <img src="./images/2_opto.jpg" alt="house" />
-              <div class="img__content">
-                <p>
-                  <b>Optimise tune as required.</b>
-                <ul class="img__list">
-                  <li class="list__item">Minimum ITAE</li>
-                  <li class="list__item">Minimum Overshoot</li>
-                  <li class="list__item">PI or PID </li>
-                  <li class="list__item">With or without PVT</li>
-                </ul>
-                </p>
+
+            <div class="indust-image">
+              <img src="./images/dPower.png" alt="Power Generation" />
+              <div class="indust-image__content">
+                <h4>Power Generation</h4>
               </div>
             </div>
-          </div>
-          <div class="overlay--img">
-            <i class="fas fa-times cross-img"></i>
-            <div class="img-info">
-              <img src="./images/3_apply.jpg" alt="house" />
-              <div class="img__content">
-                <p>
-                  <b>Load tuning values and test performance.</b>
-                <ul class="img__list">
-                  <li class="list__item">Fast Response</li>
-                  <li class="list__item">No Overshoot</li>
-                  <li class="list__item">No Oscillations</li>
-                  <li class="list__item">Smooth Control Variable</li>
-                </ul>
-                </p>
+
+            <div class="indust-image">
+              <img src="./images/eOil.png" alt="Oil and Gas" />
+              <div class="indust-image__content">
+                <h4>Oil and Gas</h4>
+              </div>
+            </div>
+
+            <div class="indust-image">
+              <img src="./images/fWater.png" alt="Water" />
+              <div class="indust-image__content">
+                <h4>Water</h4>
               </div>
             </div>
           </div>
         </div>
-      </div>
+    </section>
+
+    <section class="section" id="method">
+      <div class="container">
+        <div class="section__heading">
+          <h2>Method</h2>
+          <div class="underline"></div>
+          <div class="card__container card--grid">
+            <div class="card card-content-grid">
+              <div class="card__title">
+                <h3>Evaluate</h3>
+              </div>
+              <div class="card__icon">
+                <img src="./images/icon/magnifying-glass-solid.svg" alt="compass" />
+              </div>
+              <div class="card__content">
+                <br>
+                Identify System Model<br>
+                (FOPDT or SOPDT)<br>
+                <br>
+              </div>
+              <div class="btn btn--card">
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+            <div class="card card-content-grid">
+              <div class="card__title">
+                <h3>Tune</h3>
+              </div>
+              <div class="card__icon">
+                <img src="./images/icon/drafting-compass-solid.svg" alt="compass" />
+              </div>
+              <div class="card__content">
+                <br>
+                Optimise Tuning<br>
+                Values<br>
+                <br>
+              </div>
+              <div class="btn btn--card">
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+            <div class="card card-content-grid">
+              <div class="card__title">
+                <h3>Implement</h3>
+              </div>
+              <div class="card__icon">
+                <img src="./images/icon/gears-solid.svg" alt="compass" />
+              </div>
+              <div class="card__content">
+                <br>
+                Apply Tune
+                <br>
+              </div>
+              <div class="btn btn--card">
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+
+            <div class="overlay--img">
+              <i class="fas fa-times cross-img"></i>
+              <div class="img-info">
+                <img src="./images/1_ident.jpg" alt="house" />
+                <div class="img__content">
+                  <p>
+                    <b>Fit a model to the Actual Data.</b>
+                  <ul class="img__list">
+                    <li class="list__item">Process Variable and Control Variable are required</li>
+                    <li class="list__item">Regression is used to find an accurate system model</li>
+                    <li class="list__item">To achieve predictable tuning outcomes, a precise model is necessary</li>
+                  </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="overlay--img">
+              <i class="fas fa-times cross-img"></i>
+              <div class="img-info">
+                <img src="./images/2_opto.jpg" alt="house" />
+                <div class="img__content">
+                  <p>
+                    <b>Optimise tune as required.</b>
+                  <ul class="img__list">
+                    <li class="list__item">Minimum ITAE</li>
+                    <li class="list__item">Minimum Overshoot</li>
+                    <li class="list__item">PI or PID </li>
+                    <li class="list__item">With or without PVT</li>
+                  </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="overlay--img">
+              <i class="fas fa-times cross-img"></i>
+              <div class="img-info">
+                <img src="./images/3_apply.jpg" alt="house" />
+                <div class="img__content">
+                  <p>
+                    <b>Load tuning values and test performance.</b>
+                  <ul class="img__list">
+                    <li class="list__item">Fast Response</li>
+                    <li class="list__item">No Overshoot</li>
+                    <li class="list__item">No Oscillations</li>
+                    <li class="list__item">Smooth Control Variable</li>
+                  </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
 
     <section class="section section--gray m--top-neg p-top" id="software">
@@ -284,6 +340,12 @@
                 <i class="fas fa-map-marker-alt"></i>
                 <span class="location__text">RDS Grounds<br> Merrion Rd,<br>
                   Ballsbridge,<br> Dublin 4,<br> D04 AK83 </span>
+              </div>
+            </a>
+            <a href="https://www.youtube.com/channel/UCjwf8bJZyhVY32I2q2JZnBQ" target="_blank">
+              <div class="youtube">
+                <i class="fab fa-youtube"></i>
+                <span class="youtube_text">Follow us on YouTube</span>
               </div>
             </a>
             <a href="https://ie.linkedin.com/in/pid-tuning-ireland-441062253" target="_blank">
