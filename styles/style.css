@@ -99,7 +99,7 @@ img {
 }
 
 .m--top {
-  margin-top: 3em;
+  margin-top: 2em;
 }
 
 /****************** 
@@ -352,7 +352,7 @@ img {
   color: var(--clr-brown);
   opacity: 1;
   position: absolute;
-  top: 109%;
+  top: 110%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -469,12 +469,15 @@ img {
 
 .img__content p {
   font-family: var(--ff-primary);
+  text-align: left;
 }
 
 .img__list {
   list-style: none;
-  padding: 0;
+  list-style-position: outside;
+  padding: 0 0 0 2em;
   margin-top: 2em;
+  text-align: left;
 }
 
 
@@ -482,18 +485,13 @@ img {
   font-family: "Font Awesome 5 Free";
   font-weight: 300;
   content: "\f058";
+  margin-left: -2em;
   margin-right: 1em;
   color: var(--clr-blue);
 }
 
-ul ul {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 100;
-  content: "\f058";
-  margin-right: 1em;
-  margin-left: 1em;
-  list-style-type: square;
-  font-size: smaller;
+ul {
+  padding-inline-start: 1em;
 }
 
 .cross-img {
@@ -788,14 +786,14 @@ textarea {
   }
 
   .linkedin_text,
-  .youtube_text,
-  .location__text {
+  .location__text,
+  .youtube_text {
     font-size: 1.25rem;
     font-family: var(--ff-primary);
     font-weight: 600;
     margin-left: 2em;
     align-self: right;
-    margin-top: 0;
+    margin-top: 1.25em;
   }
 
   .linkedin i,
