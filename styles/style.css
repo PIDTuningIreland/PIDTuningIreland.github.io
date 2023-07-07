@@ -56,13 +56,6 @@ h4 {
   font-size: 0.75rem;
 }
 
-h5 {
-  margin: 0;
-  padding: 0;
-  font-family: 'Times New Roman', Times, serif;
-  color: var(--clr-blue);
-}
-
 img {
   max-width: 100%;
 }
@@ -118,7 +111,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5em 0;
+  padding: 0.25em 0;
   text-align: center;
 }
 
@@ -690,7 +683,7 @@ textarea {
   *******************/
 
   .logo {
-    width: 120px;
+    width: 75px;
   }
 
   .nav__top {
