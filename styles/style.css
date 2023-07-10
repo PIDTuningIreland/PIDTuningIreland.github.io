@@ -116,7 +116,7 @@ img {
 }
 
 .logo {
-  width: 25%;
+  width: 75px;
   align-self: center;
 }
 
@@ -673,10 +673,6 @@ textarea {
   /****************** 
     nav-bar
   *******************/
-
-  .logo {
-    width: 75px;
-  }
 
   .nav__top {
     align-self: center;
