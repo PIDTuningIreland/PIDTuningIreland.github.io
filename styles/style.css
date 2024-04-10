@@ -437,7 +437,7 @@ img {
   justify-content: center;
   align-items: center;
   background: rgba(48, 48, 48, 0.4);
-  padding: 0 2em;
+  padding: 0 1em;
   display: none;
 }
 
@@ -466,10 +466,8 @@ img {
   list-style: none;
   list-style-position: outside;
   padding: 0 0 0 2em;
-  margin-top: 2em;
   text-align: left;
 }
-
 
 .list__item::before {
   font-family: "Font Awesome 5 Free";
@@ -486,6 +484,11 @@ ul {
 
 .cross-img {
   z-index: 100;
+}
+
+.cross-img:hover {
+  filter: drop-shadow(3px 10px 5px gray);
+  transition: filter 0.1s ease-in;
 }
 
 /****************** 
@@ -725,8 +728,7 @@ textarea {
   }
 
   .img-info {
-    width: 80%;
-
+    width: 90%;
     display: flex;
     justify-content: space-between;
   }
@@ -751,7 +753,6 @@ textarea {
     row-gap: 20px;
     grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
-    padding: 2em;
   }
 
   .form__image a {
