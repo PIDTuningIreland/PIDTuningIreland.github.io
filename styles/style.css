@@ -376,19 +376,21 @@ img {
 
 .image-gallery {
   margin-top: 2em;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  justify-content: center;
   gap: 50px;
 }
 
 .image {
   position: relative;
+  width: 35vw;
   background: linear-gradient(45deg,
       rgba(21, 43, 85, 0.65),
       rgba(78, 100, 142, 0.65));
 }
 
 .image img {
+  width: 100%; 
   opacity: 1;
   display: block;
   transition: 0.5s ease;
@@ -641,6 +643,21 @@ textarea {
   color: var(--clr-l-blue-1);
 }
 
+.link__item {
+  display: inline-block; 
+  margin-right: 1em; 
+}
+
+.link__item a {
+  text-decoration: none; 
+  color: var(--clr-white); 
+  font-weight: 600; 
+}
+
+.link__item a:hover {
+  color: var(--clr-brown); 
+}
+
 .link__item+.link__item {
   margin-left: 1em;
 }
@@ -712,7 +729,7 @@ textarea {
   }
 
   /****************** 
-    our works
+    our software
   *******************/
 
   .image-gallery {
