@@ -44,13 +44,14 @@
               <a href="#home" class="nav__link active">Home</a>
             </li>
             <li class="nav__item">
-              <a href="#software" class="nav__link">Software</a>
-            </li>
-            <li class="nav__item">
               <a href="#sim" class="nav__link">Simulator</a>
             </li>
             <li class="nav__item">
               <a href="#tuner" class="nav__link">Tuner</a>
+            </li>
+            <li class="nav__item">
+              <a href="https://blog.pidtuningireland.com" class="nav__link" target="_blank"
+                rel="noopener noreferrer">Blog</a>
             </li>
             <li class="nav__item">
               <a href="#contact-us" class="nav__link btn">Contact Us</a>
@@ -283,13 +284,6 @@
             </div>
           </div>
 
-          <div class="image">
-            <img src="./images/tapa.jpg" alt="tapaTune">
-            <div class="image__content">
-              <a href="#" class="btn btn--img">Learn More</a>
-            </div>
-          </div>
-
           <div class="overlay--img">
             <div class="img-info">
               <i class="fas fa-times cross-img"></i>
@@ -311,31 +305,6 @@
                   </li>
                   <li class="list__item">Tune Optimiser</li>
                   <li class="list__item">AutoTuner</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="overlay--img">
-            <div class="img-info">
-              <i class="fas fa-times cross-img"></i>
-              <img src="./images/HalftapaTune.jpg" alt="house">
-              <div class="img__content">
-                <h3>tapaTune©</h3>
-                <p>
-                  PID Tuner using a Second Order Plus Dead-Time (SOPDT) model.<br>
-                  Tuning can be performed both offline and online.
-                </p>
-                <ul class="img__list">
-                  <li class="list__item">SOPDT Process Model Identification</li>
-                  <li class="list__item">Tune Customiser</li>
-                  <li class="list__item">AutoTuner</li>
-                  <li>
-                    <ul>
-                      <li> Open Loop</li>
-                      <li> Closed Loop</li>
-                    </ul>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -394,16 +363,16 @@
               </div>
             </a>
           </div>
-          <form action="https://formspree.io/f/myyabjbb" method="post" id="contact" class="flex col">
+          <form action="https://formspree.io/f/myyabjbb" method="post" id="contact" class="flex col" autocomplete="on">
             <div class="form__item">
-              <input name="name" type="text" placeholder="Your name" id="name">
+              <input name="name" type="text" placeholder="Your name" id="name" autocomplete="name">
               <span class="danger">Name cannot be empty.</span>
             </div>
             <div class="form__item">
-              <input name="email" type="email" placeholder="Email Address" id="email">
+              <input name="email" type="email" placeholder="Email Address" id="email" autocomplete="email">
               <span class="danger">Email cannot be empty.</span>
             </div>
-            <textarea name="message" rows="4" placeholder="Message" id="message"></textarea>
+            <textarea name="message" rows="4" placeholder="Message" id="message" autocomplete="off"></textarea>
             <input type="submit" id="submit" value="Submit" class="btn m--top center">
             <div class="overlay">
               <div class="successful">
@@ -425,9 +394,9 @@
         <div class="copyright">PID Tuning Ireland © 2023</div>
         <ul class="link__list flex">
           <li class="link__item"><a href="#home" class="link">Home</a></li>
-          <li class="link__item"><a href="#software" class="link">Software</a></li>
           <li class="link__item"><a href="#sim" class="link">Simulator</a></li>
           <li class="link__item"><a href="#tuner" class="link">Tuner</a></li>
+          <li class="link__item"><a href="https://blog.pidtuningireland.com" rel="noopener noreferrer">Blog</a></li>
           <li class="link__item"><a href="#contact-us" class="link">Contact</a>
           </li>
         </ul>
