@@ -383,7 +383,7 @@ img {
 
 .image {
   position: relative;
-  width: 35vw;
+  width: 90vw;
   background: linear-gradient(45deg,
       rgba(21, 43, 85, 0.65),
       rgba(78, 100, 142, 0.65));
@@ -645,7 +645,7 @@ textarea {
 
 .link__item {
   display: inline-block; 
-  margin-right: 1em; 
+  margin-right: 0em; 
 }
 
 .link__item a {
@@ -734,6 +734,10 @@ textarea {
 
   .image-gallery {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+
+  .image {
+    width: 35vw;
   }
 
   .btn--img {
@@ -839,7 +843,6 @@ textarea {
   .indust-image__content {
     top: 107%;
   }
-
 
   h4 {
     font-size: 1.5rem;
